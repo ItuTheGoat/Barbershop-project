@@ -1,9 +1,7 @@
 import jsoPlaceholder from "../apis/jsonPlaceholder";
-
-export const fetchPosts = async () => {
+// This is how we use redux-thunk. We use it  with the async await function.
+export const fetchPosts = () => async dispatch => {
 	const response = await jsoPlaceholder.get("./posts");
-	return {
-		type: "FETCH_POSTS",
-		payload: response
-	};
+
+	dispatch({ type: "FETCH_POSTS", payload: response });
 };
