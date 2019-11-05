@@ -1,13 +1,17 @@
 import React from "react";
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FirstPage from "./firstPage";
 
 class App extends React.Component {
 	render() {
 		return (
-			<Router>
-				<div></div>
-			</Router>
+			<div>
+				<FirstPage />
+				<Switch>
+					<Route exact path='/' component={FirstPage} />
+				</Switch>
+			</div>
 		);
 	}
 }
