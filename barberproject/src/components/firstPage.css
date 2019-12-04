@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+.card-image {
+  height: 200px;
+}
+
+.card-style {
+  padding: 0 10px 10px 10px;
+}
