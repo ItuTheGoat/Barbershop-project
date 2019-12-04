@@ -1,0 +1,1 @@
+{"version":3,"sources":["firstPage.css"],"names":[],"mappings":"AAAA,KACE,iBACF,CAEA,YACE,YACF,CAEA,YACE,mBACF","file":"main.fc104ec9.chunk.css","sourcesContent":["body {\r\n  text-align: center;\r\n}\r\n\r\n.card-image {\r\n  height: 200px;\r\n}\r\n\r\n.card-style {\r\n  padding: 0 10px 10px 10px;\r\n}\r\n"]}
