@@ -3,7 +3,6 @@ import "./firstPage.css";
 import Footer from "./footer";
 import Welcome from "./welcome";
 import { Link } from "react-router-dom";
-import SignIn from "./signin";
 
 class FirstPage extends React.Component {
 	onBarberSignIn = () => {};
