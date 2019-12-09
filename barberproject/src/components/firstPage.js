@@ -1,9 +1,9 @@
 import React from "react";
 import "./firstPage.css";
-import selfie from "../Images/selfie.png";
-import barber from "../Images/barber.png";
 import Footer from "./footer";
 import Welcome from "./welcome";
+import { Link } from "react-router-dom";
+import SignIn from "./signin";
 
 class FirstPage extends React.Component {
 	onBarberSignIn = () => {};
@@ -17,6 +17,7 @@ class FirstPage extends React.Component {
 					</div>
 				</div>
 				<div className='container'>
+					<hr />
 					<h3>Welcome</h3>
 
 					<p>Sign in below</p>
@@ -26,10 +27,16 @@ class FirstPage extends React.Component {
 
 					<div className='container'>
 						<hr />
-						<p>Dont have an account! Sign up here:</p>
-						<button className='btn btn-secondary' onClick={this.onBarberSignIn}>
+						<p>
+							Dont have an account! Sign up <Link to='/signup'>here:</Link>
+						</p>
+						<Link
+							to='/signin'
+							className='btn btn-secondary'
+							onClick={this.onBarberSignIn}
+						>
 							Sign up
-						</button>
+						</Link>
 					</div>
 				</div>
 				<Footer />
